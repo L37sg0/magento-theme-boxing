@@ -277,6 +277,20 @@
                     );
                 }
             }
+
+            .contact-info {
+                //display: inline-block;
+                //padding-right: 50px;
+                //vertical-align: top;
+                margin: 0;
+                padding: 0;
+                h3,
+                p,
+                strong {
+                    .lib-css(color, @footer-links-color);
+                    padding: @indent__s 0;
+                }
+            }
         }
     }
 
@@ -373,6 +387,10 @@
         }
 
         .links .widget.block {
+            margin: 0;
+        }
+
+        .contact-info .widget.block {
             margin: 0;
         }
     }
@@ -747,6 +765,20 @@
                 a,
                 strong {
                     display: inline;
+                }
+            }
+
+            .contact-info {
+                display: inline-block;
+                padding-right: 50px;
+                vertical-align: top;
+
+                h3,
+                p,
+                strong {
+                    border: none;
+                    margin: 0 0 8px;
+                    padding: 0;
                 }
             }
         }
