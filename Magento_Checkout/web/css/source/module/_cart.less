@@ -362,7 +362,6 @@
 
     //  Discount
     .cart-discount {
-        border-bottom: @border-width__base solid @border-color__base;
         clear: left;
         &:extend(.abs-discount-block all);
     }
@@ -434,10 +433,6 @@
                 }
             }
         }
-    }
-
-    .cart-discount {
-        border-bottom: @border-width__base solid @border-color__base;
     }
 
     .cart {
@@ -713,18 +708,11 @@
 
     //  Discount
     .cart-discount {
-        &:extend(.abs-discount-block-desktop all);
-        .lib-layout-column(2, 1, @layout-column-checkout__width-main);
-        border: 0;
-        box-sizing: border-box;
-        padding-right: 4%;
 
         .block {
             .title {
                 &:after {
                     display: inline;
-                    margin-left: @indent__s;
-                    position: static;
                 }
             }
 
@@ -734,6 +722,18 @@
 
             .actions-toolbar {
                 width: auto;
+            }
+        }
+
+        .content {
+            form {
+                .coupon {
+                    .field {
+                        .label {
+                            display: none;
+                        }
+                    }
+                }
             }
         }
     }
