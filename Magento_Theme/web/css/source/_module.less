@@ -279,17 +279,28 @@
             }
 
             .contact-info {
-                //display: inline-block;
-                //padding-right: 50px;
-                //vertical-align: top;
                 margin: 0;
                 padding: 0;
+
                 h3,
                 p,
                 strong {
                     .lib-css(color, @footer-links-color);
+                    display: block;
                     padding: @indent__s 0;
                 }
+            }
+
+            .payment-methods {
+                .lib-css(background, @footer__background-color);
+                margin: 0 -@layout__width-xs-indent;
+                padding: 0 @layout__width-xs-indent;
+                display: flex;
+                justify-content: center;
+
+                //img {
+                //    padding: @indent__s 0;
+                //}
             }
         }
     }
@@ -391,6 +402,10 @@
         }
 
         .contact-info .widget.block {
+            margin: 0;
+        }
+
+        .payment-methods .widget.block {
             margin: 0;
         }
     }
@@ -776,6 +791,18 @@
                 h3,
                 p,
                 strong {
+                    border: none;
+                    margin: 0 0 8px;
+                    padding: 0;
+                }
+            }
+
+            .payment-methods {
+                display: inline-block;
+                padding-right: 50px;
+                vertical-align: top;
+
+                img {
                     border: none;
                     margin: 0 0 8px;
                     padding: 0;
